@@ -35,10 +35,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         linearLayout3 = findViewById(R.id.linearLayout3);
         linearLayout4 = findViewById(R.id.linearLayout4);
 
-        linearLayout1.setOnClickListener(this);
-        linearLayout2.setOnClickListener(this);
-        linearLayout3.setOnClickListener(this);
-        linearLayout4.setOnClickListener(this);
+
 
         imageView1=findViewById(R.id.imageView1);
         imageView2=findViewById(R.id.imageView2);
@@ -48,10 +45,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         initFragment();
         showfragment(0);
 
-        imageView1.setOnClickListener(this);
-        imageView2.setOnClickListener(this);
-        imageView3.setOnClickListener(this);
-        imageView4.setOnClickListener(this);
+        linearLayout1.setOnClickListener(this);
+        linearLayout2.setOnClickListener(this);
+        linearLayout3.setOnClickListener(this);
+        linearLayout4.setOnClickListener(this);
 
 
     }
@@ -81,16 +78,16 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View v) {
         resetimg();
         switch (v.getId()) {
-            case R.id.imageView1:
+            case R.id.linearLayout1:
                 showfragment(0);
                 break;
-            case R.id.imageView2:
+            case R.id.linearLayout2:
                 showfragment(1);
                 break;
-            case R.id.imageView3:
+            case R.id.linearLayout3:
                 showfragment(2);
                 break;
-            case R.id.imageView4:
+            case R.id.linearLayout4:
                 showfragment(3);
                 break;
             default:
